@@ -8,6 +8,15 @@ def take_a_number(customer_line, new_customer)
   end
 end
 
+# check an array of pre determined numbers
+# when a customer takes a number, output to the console
+# when a new customer takes a number, output the number following the previous number
+number_queue = [1, 2, 3, 4, 5]
+def take_a_number(number_queue, customer)
+  number_drawn = number_queue.shift
+  puts "Hi, #{customer}, you have draw number #{number_drawn}"
+end
+
 def line(array)
   queue = ["The line is currently:"]
 
